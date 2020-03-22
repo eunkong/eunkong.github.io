@@ -46,7 +46,7 @@ System.out.println("d : " + System.identityHashCode(d)); // d : 1326101490
 ## String Pool
 Java 6까지는 String Pool의 위치가 PermGen(Permanent Generation)에 있었다. **PermGen 영역은 고정된 크기** 이기 때문에 Runtime 중에 사이즈가 확장되지 않는다. PermGen 영역의 크기를 늘릴 수는 있으나, Runtime 중에 변경할 수는 없다. 따라서 Runtime 중에 String Pool에 저장될는 String의 크기가 거대하거나 방대할 경우 `OutOfMemory` 가 발생한다.
 
-![String_Heap_Non-Heap](https://github.com/eunkong/eunkong.github.io/tree/master/_post/img/String_Pool/String_Heap_Non-Heap.PNG)
+![String_Heap_Non-Heap](https://user-images.githubusercontent.com/34757921/77240937-598e9280-6c2f-11ea-9408-61492e2ae690.PNG)
 
 이때문에 Java 7부터는 String Pool의 위치가 Heap 영역으로 이동됐다. **Heap 영역으로 이동된 String Pool의 문자열들은 GC의 대상** 이 된다. 따라서 Runtime 중에도 메모리에서 해제가 될 수 있다.
 
