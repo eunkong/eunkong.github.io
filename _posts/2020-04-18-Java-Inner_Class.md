@@ -3,7 +3,7 @@ layout: post
 title: "[Java] Inner Class (static Inner Class와 non-static Inner Class 비교)"
 date: 2020-04-18
 excerpt: "Inner Class는 static Inner Class 또는 non-static Inner Class로 구분된다. 인스턴스 생성 방법과 Heap 메모리 사용에 차이가 존재한다."
-tags: [Java]
+tags: [Java, Heap]
 comments: true
 ---
 
