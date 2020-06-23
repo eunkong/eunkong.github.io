@@ -121,7 +121,7 @@ ExecutorService service = Executors.newFixedThreadPool(2);
   ```java
   public abstract class AbstractExecutorService implements ExecutorService { ... }
   ```
-- `ExecutorService` 인터페이스는 `Executor`를 구현
+- `ExecutorService` 인터페이스는 `Executor`를 상속
   ```java
   public interface ExecutorService extends Executor { ... }
   ```
